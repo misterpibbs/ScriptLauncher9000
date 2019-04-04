@@ -42,8 +42,6 @@ $WMS = $OpenWindow.FindName("WMS")
 $Lockedout = $OpenWindow.FindName("locked")
 $UserDisable = $OpenWindow.FindName("UserDisable")
 
-$qepath = "C:\ScriptLauncher9000\quickexchange.ps1"
-
 $UserCreate.Add_Click({Start-Process -FilePath "powershell" C:\ScriptLauncher9000\UserCreationV2.ps1})
 $QuickExchange.Add_Click({Start-Process powershell -ArgumentList "-noexit", "C:\ScriptLauncher9000\quickexchange.ps1"})
 $WMS.Add_Click({Start-Process -FilePath "powershell" C:\ScriptLauncher9000\wms.ps1})
